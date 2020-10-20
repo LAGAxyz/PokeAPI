@@ -1,0 +1,65 @@
+
+:root{
+    --altomain: calc(100vh - 78.5px);
+    --pokecolor: #ff1c1c;
+    --pokefranja: #333;
+}
+
+main{
+    font-size: 20rem;
+    width: 100%;
+    height: var(--altomain);
+    background-color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokebola{
+    width: 1em;
+    height: 1em;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: swing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.pokebola::before{
+    content: "";
+    width: 1em;
+    height: 0.5em;
+    background-color: var(--pokecolor);
+    border-radius: 0.5em 0.5em 0 0;
+    position: absolute;
+}
+
+.pokefranja{
+    width: 1em;
+    height: 0.05em;
+    background-color: var(--pokefranja);
+    margin-top: 0.48em;
+    position: absolute;
+}
+
+.pokefranja::before{
+    content: "";
+    width: 0.3em;
+    height: 0.3em;
+    background-color: var(--pokefranja);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -0.11em;
+    margin-left: 0.35em;
+}
+
+.pokefranja::after{
+    content: "";
+    width: 0.18em;
+    height: 0.18em;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -0.05em;
+    margin-left: 0.41em;
+    position: absolute;
+}
