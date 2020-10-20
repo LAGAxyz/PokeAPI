@@ -52,7 +52,8 @@ const dibujarPokemones = (pokemones)=> {
     pokemones.forEach((objPokemon)=>{
         let row = document.createElement("div");
         row.classList.add("row");
-        row.innerHTML = `<div class="col-md-6 p-5">
+        row.innerHTML = 
+    `<div class="col-md-6 p-5">
         <div class="card border-0 shadow">
             <div class="shadow altura">${objPokemon.altura}m</div>
             <div class="shadow peso">${objPokemon.peso}kg</div>
