@@ -8,7 +8,8 @@
 ------------
 
 <p align="center">
-Proyecto Web desarrollado con el uso de distintas tecnologías y el consumo de la API oficial de Pokemon [(PokeAPI)](https://pokeapi.co/)
+Proyecto Web desarrollado con el uso de distintas tecnologías y el consumo de la API oficial de Pokemon
+<a href="https://pokeapi.co/">PokeAPI</a>
 </p>
 
 <p align="center">
@@ -30,5 +31,5 @@ Proyecto Web desarrollado con el uso de distintas tecnologías y el consumo de l
 
 ------------
 
-Puedes ver el proyecto en vivo [aquí](https://lagaxyz.github.io/PokeAPI/index.html)
-Recomendaciones y/o Sugerencias [aquí](https://github.com/LAGAxyz/PokeAPI/issues)
+<p>Puedes ver el proyecto en vivo [aquí](https://lagaxyz.github.io/PokeAPI/index.html)</p>
+<p>Recomendaciones y/o Sugerencias [aquí](https://github.com/LAGAxyz/PokeAPI/issues)</p>
