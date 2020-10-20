@@ -13,7 +13,6 @@ main{
     font-size: 20rem;
     width: 100%;
     height: var(--altomain);
-    background-color: #d2d2d2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +24,7 @@ main{
     background-color: #fff;
     border-radius: 50%;
     animation: swing 4s infinite;
-    /* animation-duration: 4s; */
-    /* animation-iteration-count: infinite; */
+    box-shadow: 0px 0px 20px 5px;
 }
 
 .pokebola::before{
