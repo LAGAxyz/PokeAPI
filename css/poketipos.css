@@ -1,0 +1,54 @@
+
+.tipos__tipo {
+    background-color: #f8f8f8;
+    border-radius: 0.75rem;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.tipos__tipo:hover {
+    background-color: #c02f27;
+    color: white;
+}
+
+.filas .row:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.filas .row:nth-child(even) {
+    background-color: #fefefe;
+}
+
+.filas .card {
+    position: relative;
+    border-radius: 2rem;
+}
+
+.filas .card .altura,
+.filas .card .peso {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    top: -20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filas .card .altura {
+    left: -20px;
+}
+
+.filas .card .peso {
+    right: -20px;
+}
+
+.filas .card figure img {
+    max-height: 200px;
+}

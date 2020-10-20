@@ -13,7 +13,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
         crossorigin="anonymous">
     <!-- My own styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/poketipos.css">
 </head>
 <body>
     <!-- audio -->
@@ -43,6 +43,68 @@
         </div>
     </nav>
     <!-- NavBar -->
+    <!-- CONTENIDO -->
+    <main class="container-fluid mt-5">
+        <div class="row">
+            <aside class="col-md-2 tipos" id="tipos">
+                <div class="text-center mb-2 p-3 tipos__tipo">tipo</div>
+                <div class="text-center mb-2 p-3 tipos__tipo">tipo</div>
+                <div class="text-center mb-2 p-3 tipos__tipo">tipo</div>
+            </aside>
+            <section class="col-md-10 filas" id="filas">
+                <div class="row">
+                    <div class="col-md-6 p-5">
+                        <div class="card border-0 shadow">
+                            <div class="shadow altura">altura</div>
+                            <div class="shadow peso">peso</div>
+                            <div class="card-body text-center">
+                                <figure>
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="PokeFoto">
+                                </figure>
+                                <h3 class="card-title my-0">CHARIZARD</h3>
+                                <p class="card-text my-0">Tipo de pokemon</p>
+                                <p class="card-text my-0">TIPO</p>
+                                <p class="card-text my-0">Características</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row align-items-center" style="height: 100%">
+                            <div class="col-12">
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- CONTENIDO -->
     <!-- JQuery CDN -->
     <script 
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
