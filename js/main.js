@@ -1,5 +1,5 @@
 
 const redireccionar = ()=> {
-    location.href = ("../pokebola.html");
+    location.href = ("./pokebola.html");
 };
 redireccionar();
