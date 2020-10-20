@@ -31,5 +31,5 @@ Proyecto Web desarrollado con el uso de distintas tecnologías y el consumo de l
 
 ------------
 
-<p>Puedes ver el proyecto en vivo [aquí](https://lagaxyz.github.io/PokeAPI/index.html)</p>
-<p>Recomendaciones y/o Sugerencias [aquí](https://github.com/LAGAxyz/PokeAPI/issues)</p>
+<p>Puedes ver el proyecto en vivo <a href="https://lagaxyz.github.io/PokeAPI/index.html">aquí</a></p>
+<p>Recomendaciones y/o Sugerencias <a href="https://github.com/LAGAxyz/PokeAPI/issues">aquí</a></p>
