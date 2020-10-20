@@ -5,6 +5,10 @@
     --pokefranja: #333;
 }
 
+.cboAnimacion{
+    cursor: pointer;
+}
+
 main{
     font-size: 20rem;
     width: 100%;
@@ -20,9 +24,9 @@ main{
     height: 1em;
     background-color: #fff;
     border-radius: 50%;
-    animation: swing;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation: swing 4s infinite;
+    /* animation-duration: 4s; */
+    /* animation-iteration-count: infinite; */
 }
 
 .pokebola::before{

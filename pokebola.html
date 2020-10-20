@@ -15,12 +15,12 @@
     <!-- Animate CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- My own styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pokebola.css">
 </head>
 <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
-        <a href="./index.html">
+        <a href="./pokebola.html">
             <img src="./img/pokelogo.png" alt="POKEMON" width="150px">
         </a>
         <button class="navbar-toggler" type="button"
@@ -29,8 +29,11 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">PokeBola</a>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PokeBola</a>
+                    <div class="dropdown-menu" id="cboAnimaciones" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item cboAnimacion">animacion</a> -->
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pokelista.html">PokeLista</a>
@@ -44,7 +47,7 @@
     <!-- NavBar -->
     <!-- PokeBola -->
     <main>
-        <div class="pokebola">
+        <div class="pokebola" id="pokebola">
             <div class="pokefranja"></div>
         </div>
     </main>
@@ -61,5 +64,7 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous">
     </script>
+    <!-- My own JS -->
+    <script src="./js/pokebola.js"></script>
 </body>
 </html>
