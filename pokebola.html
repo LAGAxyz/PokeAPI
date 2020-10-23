@@ -19,7 +19,9 @@
 </head>
 <body>
     <!-- audio -->
-    <iframe src="./sounds/pokebola.mp3" autoplay loop hidden></iframe>
+    <audio autoplay loop hidden id="audio">
+        <source src="./sounds/pokebola.mp3" type="audio/mp3">
+    </audio>
     <!-- audio -->
     <!-- NavBar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-danger">
@@ -75,5 +77,6 @@
     </script>
     <!-- My own JS -->
     <script src="./js/pokebola.js"></script>
+    <script src="./js/sr.js"></script>
 </body>
 </html>
