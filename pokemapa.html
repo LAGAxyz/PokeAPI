@@ -13,14 +13,11 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
         crossorigin="anonymous">
     <!-- My own styles -->
-    <link rel="stylesheet" href="./css/poketipos.css">
+    <link rel="stylesheet" href="./css/pokemapa.css">
 </head>
 <body>
-    <!-- audio -->
-    <iframe src="./sounds/poketipos.mp3" autoplay loop hidden></iframe>
-    <!-- audio -->
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
         <a href="./pokebola.html">
             <img src="./img/pokelogo.png" alt="POKEMON" width="150px">
         </a>
@@ -29,30 +26,28 @@
                 <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
+            <ul class="navbar-nav ml-auto mt-2">
+                <li class="nav-item dropdown">
                     <a class="nav-link" href="./pokebola.html">PokeBola</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pokefoto.html">PokeFoto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./pokemapa.html">PokeMapa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pokelista.html">PokeLista</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="./poketipos.html">PokeTipos</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- NavBar -->
-    <!-- CONTENIDO -->
-    <main class="container-fluid mt-5">
-        <div class="row">
-            <aside class="col-md-2 tipos" id="tipos">
-                <!-- <div class="text-center mb-2 p-3 tipos__tipo">tipo</div> -->
-            </aside>
-            <section class="col-md-10 filas" id="filas"></section>
-        </div>
-    </main>
-    <!-- CONTENIDO -->
+    <!-- PokeMapa -->
+    <!-- PokeMapa -->
     <!-- JQuery CDN -->
     <script 
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -66,6 +61,6 @@
         crossorigin="anonymous">
     </script>
     <!-- My own JS -->
-    <script src="./js/poketipos.js"></script>
+    <script src="./js/pokemapa.js"></script>
 </body>
 </html>

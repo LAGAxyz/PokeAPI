@@ -5,6 +5,7 @@ const cboAnimaciones = document.getElementById("cboAnimaciones");
 const animaciones = [
     "bounce", "flash", "pulse", "rubberBand", "shakeX", "shakeY",
     "swing", "tada", "wobble", "jello", "heartBeat",
+    "rollIn", "backInLeft"
 ]
 
 const listarAnimaciones = ()=> {
