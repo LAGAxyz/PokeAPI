@@ -12,7 +12,8 @@ function dibujarMapa(){
         var marcador = new google.maps.Marker({
             map: mapa,
             position: geolocalizacion,
-            visible: true
+            visible: true,
+            icon: "./img/pokepunto.png"
         });
         marcador_tiempo_real = new google.maps.Marker({
             map: mapa,
