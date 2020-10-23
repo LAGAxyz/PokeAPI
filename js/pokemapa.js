@@ -12,8 +12,7 @@ function dibujarMapa(){
         var marcador = new google.maps.Marker({
             map: mapa,
             position: geolocalizacion,
-            visible: true,
-            icon: "./img/pokepunto.png"
+            visible: true
         });
         marcador_tiempo_real = new google.maps.Marker({
             map: mapa,
@@ -22,12 +21,8 @@ function dibujarMapa(){
             icon: "./img/pokepunto.png"
         });
         mapa.setCenter(geolocalizacion);
-        navigator.geolocation.watchPosition(actualizarPosicion, function(e){
-            alert("Error: " + e);
-        }, {maximumAge: 0});
-    }, function(e){
-        alert("Error: " + e);
-    });
+        navigator.geolocation.watchPosition(actualizarPosicion, function(){}, {maximumAge: 0});
+    }, function(){});
 }
 
 function actualizarPosicion(posicion){
