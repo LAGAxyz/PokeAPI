@@ -13,9 +13,14 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
         crossorigin="anonymous">
     <!-- My own styles -->
-    <link rel="stylesheet" href="./css/pokefoto.css">
+    <link rel="stylesheet" href="./css/poketipos.css">
 </head>
 <body>
+    <!-- audio -->
+    <audio autoplay loop hidden id="audio">
+        <source src="./sounds/poketipos.mp3" type="audio/mp3">
+    </audio>
+    <!-- audio -->
     <!-- NavBar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-danger">
         <a href="./pokebola.html">
@@ -30,7 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./pokebola.html">PokeBola</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="./pokefoto.html">PokeFoto</a>
                 </li>
                 <li class="nav-item">
@@ -39,40 +44,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./pokelista.html">PokeLista</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="./poketipos.html">PokeTipos</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- NavBar -->
-    <!-- PokeFoto -->
-    <main class="bg-light">
-        <div id="camara" class="camara">
-            <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
-            <div class="actions" id="actions">
-                <a id="download"><img src="./img/btn-download.png"></a>
-                <a id="sticker"><img src="./img/btn-sticker.png"></a>
-                <a id="cancel"><img src="./img/btn-cancel.png"></a>
-            </div>
-            <div class="stickers" id="stickers">
-                <img src="./img/01pikachu.png" class="sticker">
-                <img src="./img/02squirtle.png" class="sticker">
-                <img src="./img/03charmander.png" class="sticker">
-                <img src="./img/04bullbasaur.png" class="sticker">
-                <img src="./img/05psyduck.png" class="sticker">
-                <img src="./img/06avatar.png" class="sticker">
-                <img src="./img/07meowth.png" class="sticker">
-                <img src="./img/08eevee.png" class="sticker">
-                <img src="./img/09snorlax.png" class="sticker">
-                <img src="./img/10pokeball.png" class="sticker">
-            </div>
-            <button class="snap" id="snap"></button>
+    <!-- CONTENIDO -->
+    <main class="container-fluid mt-5">
+        <div class="row">
+            <aside class="col-md-2 tipos" id="tipos">
+                <!-- <div class="text-center mb-2 p-3 tipos__tipo">tipo</div> -->
+            </aside>
+            <section class="col-md-10 filas" id="filas"></section>
         </div>
-        <video src="" id="video" class="video" autoplay hidden></video>
-        <a href="" id="download-link" class="download-link" hidden></a>
     </main>
-    <!-- PokeFoto -->
+    <!-- CONTENIDO -->
     <!-- JQuery CDN -->
     <script 
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -86,6 +74,7 @@
         crossorigin="anonymous">
     </script>
     <!-- My own JS -->
-    <script src="./js/pokefoto.js"></script>
+    <script src="./js/poketipos.js"></script>
+    <script src="./js/sr.js"></script>
 </body>
 </html>
