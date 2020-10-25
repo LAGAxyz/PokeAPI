@@ -13,7 +13,7 @@ const listarPokemones = (data)=> {
     let divFake = new DocumentFragment();
     document.getElementById("pokeLista").innerHTML = "";
 
-    for (let item=0; item<datos.length; item++){
+    datos.forEach((dato)=>{
         let columna = document.createElement("div");
         let card = document.createElement("div");
         let figure = document.createElement("figure");
@@ -27,16 +27,16 @@ const listarPokemones = (data)=> {
         cuerpo.classList.add("card-body");
         texto.classList.add("card-text", "text-center", "font-weight-bold", "text-primary", "h4");
         
-        texto.innerText = datos[item].name;
-
-        fetch(`https://pokeapi.co/api/v2/pokemon/${item+1}`).then((consulta)=>{
+        texto.innerText = dato.name;
+    
+        fetch(`${dato.url}`).then((consulta)=>{
             consulta.json().then((data)=>{
-                if(data.sprites.other["official-artwork"].front_default){
-                    img.src = data.sprites.other["official-artwork"].front_default;
-                } else {img.src = "./img/pokegiro.gif";}
+                data.sprites.other["official-artwork"].front_default ?
+                img.src = data.sprites.other["official-artwork"].front_default :
+                img.src = "./img/pokegiro.gif";
             });
         });
-
+    
         figure.appendChild(img);
         cuerpo.appendChild(texto);
         card.appendChild(figure);
@@ -44,6 +44,6 @@ const listarPokemones = (data)=> {
         columna.appendChild(card);
     
         divFake.appendChild(columna);
-    }
+    });
     document.getElementById("pokeLista").appendChild(divFake);
 };
