@@ -25,6 +25,10 @@
     justify-content: center;
 }
 
+.ancho-img{
+    width: 40%;
+}
+
 .icono{
     background-color: #666;
     border-radius: 50%;
