@@ -28,8 +28,3 @@ Proyecto Web desarrollado con el uso de distintas tecnologías y el consumo de l
     <a> <img src="https://devicon.dev/devicon.git/icons/javascript/javascript-original.svg" width="40" height="40"/> </a>
     <a> <img src="https://devicon.dev/devicon.git/icons/bootstrap/bootstrap-plain.svg" width="40" height="40"/> </a>
 </p>
-
-------------
-
-<p>Puedes ver el proyecto en vivo <a href="https://lagaxyz.github.io/PokeAPI/index.html">aquí</a></p>
-<p>Recomendaciones y/o Sugerencias <a href="https://github.com/LAGAxyz/PokeAPI/issues">aquí</a></p>
