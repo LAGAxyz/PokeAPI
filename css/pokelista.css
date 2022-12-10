@@ -11,3 +11,27 @@
 .pokecard{
     margin: 2px;
 }
+
+body::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #959595;
+    border: 1px solid #f1f2f3;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ff4258;
+    border: 1px dashed #000000;
+}

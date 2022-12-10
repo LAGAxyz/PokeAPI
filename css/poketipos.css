@@ -37,3 +37,27 @@
     height: 50px;
     width: 50px;
 }
+
+.tipos::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.tipos::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+.tipos::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.tipos::-webkit-scrollbar-thumb {
+    background-color: #d5f555;
+    border: 1px solid #1000cc;
+    border-radius: 20px;
+}
+
+.tipos::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ff4258;
+    border: 1px dashed #000000;
+}
